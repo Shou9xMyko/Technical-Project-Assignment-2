@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "Plus-Jakarta-Sans-Regular";
+  src: url(./asset/font/static/PlusJakartaSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Plus-Jakarta-Sans-Medium";
+  src: url(./asset/font/static/PlusJakartaSans-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Plus-Jakarta-Sans-Semi-Bold";
+  src: url(./asset/font/static/PlusJakartaSans-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Plus-Jakarta-Sans-ExtraBold";
+  src: url(./asset/font/static/PlusJakartaSans-ExtraBold.ttf);
+}
+
+/* Main Style */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  margin-top: 4em;
+}
+
+form {
+  width: 32em;
+  margin: 0 1em;
+}
+#title {
+  font-family: "Plus-Jakarta-Sans-ExtraBold";
+  text-align: center;
+  font-size: 3em;
+}
+
+#subTitle {
+  font-family: "Plus-Jakarta-Sans-Regular";
+  margin: 1.5em 0 3.2em 0;
+  font-weight: bold;
+}
+
+.wrapperInputKG {
+  font-family: "Plus-Jakarta-Sans-Regular";
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+}
+
+#inputWeight {
+  width: 92%;
+  padding: 0.8em 1em;
+  border: 2px solid rgb(192, 190, 190);
+  border-radius: 4px;
+  font-family: "Plus-Jakarta-Sans-Semi-Bold";
+  outline: none;
+}
+
+#inputWeight::placeholder {
+  color: rgb(192, 191, 191);
+  font-size: 1.1em;
+  font-family: "Plus-Jakarta-Sans-Semi-Bold";
+}
+
+.wrapperInputCM {
+  font-family: "Plus-Jakarta-Sans-Regular";
+  font-weight: bold;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+}
+
+#inputHeight {
+  width: 92%;
+  padding: 0.8em 1em;
+  border: 2px solid rgb(192, 190, 190);
+  border-radius: 4px;
+  font-family: "Plus-Jakarta-Sans-Semi-Bold";
+  outline: none;
+}
+
+#inputHeight::placeholder {
+  color: rgb(192, 191, 191);
+  font-size: 1.1em;
+  font-family: "Plus-Jakarta-Sans-Semi-Bold";
+}
+
+#btnCalculation {
+  padding: 0.6em 1.5em;
+  margin: 2em 0 3em 0;
+  background-color: #6610f2;
+  border: 0 solid #6610f2;
+  border-radius: 6px;
+  color: white;
+  font-family: "Plus-Jakarta-Sans-Medium";
+  font-size: 1em;
+}
+
+#btnCalculation:active {
+  background-color: #4506aa;
+}
+#resultBMI {
+  font-family: "Plus-Jakarta-Sans-Medium";
+}

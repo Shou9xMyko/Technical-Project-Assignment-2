@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./style.css" />
+    <title>BMI Calculator | Miko Firnando</title>
+  </head>
+  <body>
+    <div id="container">
+      <form>
+        <h1 id="title">Check your BMI</h1>
+        <p id="subTitle">
+          Enter your weight and height below to check your BMI results
+        </p>
+        <div class="wrapperInputKG">
+          <p class="titleInputWeight">Put your weight in here (KG)</p>
+          <input type="text" id="inputWeight" placeholder="60" />
+        </div>
+        <div class="wrapperInputCM">
+          <p class="titleInputHeight">And your height in here (CM)</p>
+          <input type="text" id="inputHeight" placeholder="167" />
+        </div>
+        <button id="btnCalculation" type="button">Calculate BMI</button>
+        <p id="resultBMI"></p>
+      </form>
+    </div>
+    <!-- Script -->
+    <script src="./main.js"></script>
+  </body>
+</html>
