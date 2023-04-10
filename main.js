@@ -19,10 +19,14 @@ btnCalculation.addEventListener("click", () => {
     status = "Underweight";
   }
 
-  // Exeption if user input Not Number!
-  isNaN(calculate.toFixed(1))
-    ? (resultBMI.innerHTML = `What you input is <strong>Not A Number</strong>, please input a <strong>Number!</strong> `)
-    : (resultBMI.innerHTML = `Your BMI is <strong>${calculate.toFixed(
-        1
-      )}</strong> which means You are <strong>${status}</strong>`);
+  if (Weight == "" || Height == "") {
+    resultBMI.innerHTML =
+      "Your input is <strong>Empty</strong>, please fill in the input!";
+  } else if (isNaN(calculate.toFixed(1))) {
+    resultBMI.innerHTML = `What you input is <strong>Not A Number</strong>, please input a <strong>Number!</strong> `;
+  } else {
+    resultBMI.innerHTML = `Your BMI is <strong>${calculate.toFixed(
+      1
+    )}</strong> which means You are <strong>${status}</strong>`;
+  }
 });
